@@ -9,7 +9,12 @@ class FlippingCard {
     }
 
     flipCard(){
-        
+        this.isShowingFront = this.isShowingFront ? false : true;
+        if(this.isShowingFront){
+            this.card.innerText = this.backContent;
+        } else {
+            this.card.innerText = this.frontContent;
+        }
     }
 
 }
